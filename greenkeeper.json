@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "react-auth-client/package.json",
+        "react-auth-server/package.json"
+      ]
+    }
+  }
+}
