@@ -7,7 +7,8 @@
     "react-dom": "^16.3.2",
     "react-fontawesome": "^1.6.1",
     "react-scripts": "2.1.5",
-    "socket.io-client": "^2.1.1"
+    "socket.io-client": "^2.1.1",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,12 +16,15 @@
     "dev": "HTTPS=true react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && netlify deploy"
+    "deploy": "npm run build && netlify deploy",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
